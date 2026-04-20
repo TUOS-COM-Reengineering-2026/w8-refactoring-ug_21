@@ -51,11 +51,12 @@ class CustomerManager:
         else:
             return 20
 
-def calculate_shipping_fee_for_heavy_items(purchases):
-    for purchase in purchases:
-        if purchase.get('weight', 0) > 20:
-            return 50
-    return 20
+# Already been refactored into "calculate_shipping_fee"
+# def calculate_shipping_fee_for_heavy_items(purchases):
+#     for purchase in purchases:
+#         if purchase.get('weight', 0) > 20:
+#             return 50
+#     return 20
 
 def calculate_shipping_fee_for_fragile_items(purchases):
     fragile_item = False
